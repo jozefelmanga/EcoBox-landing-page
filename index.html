@@ -54,6 +54,56 @@
             </div>
         </section>
 
+        <!-- Testimonials + Counters -->
+        <section class="section" aria-labelledby="testimonials-title">
+            <div class="container">
+                <h2 id="testimonials-title">Ils nous font confiance</h2>
+
+                <div class="testimonials reveal" role="region" aria-roledescription="carousel"
+                    aria-label="Témoignages de clients">
+                    <div class="track">
+                        <blockquote class="testimonial" role="group" aria-roledescription="slide" aria-label="1 de 3">
+                            <p>Nous avons réduit nos coûts d'emballage de 24 % tout en améliorant l'expérience client.
+                            </p>
+                            <cite>— Atelier Biome</cite>
+                        </blockquote>
+                        <blockquote class="testimonial" role="group" aria-roledescription="slide" aria-label="2 de 3">
+                            <p>L'équipe EcoBox a livré un prototype en moins de 10 jours, parfaitement conforme.</p>
+                            <cite>— Maison Verta</cite>
+                        </blockquote>
+                        <blockquote class="testimonial" role="group" aria-roledescription="slide" aria-label="3 de 3">
+                            <p>Excellent suivi et vraie transparence sur nos matériaux — choix stratégique gagnant.</p>
+                            <cite>— Comptoir Naturel</cite>
+                        </blockquote>
+                    </div>
+
+                    <div class="carousel-controls" aria-hidden="false">
+                        <button class="carousel-prev" aria-label="Précédent">‹</button>
+                        <button class="carousel-next" aria-label="Suivant">›</button>
+                        <div class="carousel-dots" aria-hidden="true"></div>
+                    </div>
+                    <!-- visual hints for navigation (non-essential) -->
+                    <div class="carousel-hint left" aria-hidden="true">◀</div>
+                    <div class="carousel-hint right" aria-hidden="true">▶</div>
+                </div>
+
+                <div class="counters reveal" aria-label="Chiffres clés">
+                    <div class="counter" aria-hidden="false">
+                        <div class="count" data-target="35">0</div>
+                        <div class="label">Tonnes de plastique évitées</div>
+                    </div>
+                    <div class="counter" aria-hidden="false">
+                        <div class="count" data-target="120">0</div>
+                        <div class="label">Marques accompagnées</div>
+                    </div>
+                    <div class="counter" aria-hidden="false">
+                        <div class="count" data-target="98">0</div>
+                        <div class="label">% matériaux compostables</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section class="section" id="about" aria-labelledby="about-title">
             <div class="container grid-2">
                 <div>
@@ -121,8 +171,8 @@
                     marques engagées.</p>
                 <div class="team-grid">
                     <article class="team-card">
-                        <img src="./images/Amel Ben Youssef.jpg"
-                            alt="Portrait de Amel Ben Youssef, fondatrice d'EcoBox" loading="lazy">
+                        <img src="./images/Amel Ben Youssef.jpg" alt="Portrait de Amel Ben Youssef, fondatrice d'EcoBox"
+                            loading="lazy">
                         <div class="team-info">
                             <h3>Amel Ben Youssef</h3>
                             <p class="role">Fondatrice &amp; stratège circularité</p>
@@ -131,8 +181,8 @@
                         </div>
                     </article>
                     <article class="team-card">
-                        <img src="./images/Karim Gharbi.jpg"
-                            alt="Portrait d'Karim Gharbi, ingénieur matériaux" loading="lazy">
+                        <img src="./images/Karim Gharbi.jpg" alt="Portrait d'Karim Gharbi, ingénieur matériaux"
+                            loading="lazy">
                         <div class="team-info">
                             <h3>Karim Gharbi</h3>
                             <p class="role">Ingénieur matériaux verts</p>
@@ -141,8 +191,8 @@
                         </div>
                     </article>
                     <article class="team-card">
-                        <img src="./images/Leila Mejri.jpg"
-                            alt="Portrait de Leila Mejri, designer packaging" loading="lazy">
+                        <img src="./images/Leila Mejri.jpg" alt="Portrait de Leila Mejri, designer packaging"
+                            loading="lazy">
                         <div class="team-info">
                             <h3>Leila Mejri</h3>
                             <p class="role">Designer packaging</p>
@@ -202,7 +252,10 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <!-- load modular JS (ES modules) -->
+    <script type="module" src="js/main.js"></script>
+    <!-- legacy fallback for environments that don't support modules (or file://) -->
+    <script nomodule src="js/main.legacy.js"></script>
 </body>
 
 </html>

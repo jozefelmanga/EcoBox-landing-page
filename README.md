@@ -1,5 +1,7 @@
 # Rapport de Projet
 
+> Note: le projet a été mis à jour pour utiliser des modules ES (dossier `js/`). Le fichier legacy `script.js` a été neutralisé. Vous pouvez supprimer `script.js` si votre déploiement charge `js/main.js` via `type="module"` dans `index.html`.
+
 ## 1. Introduction
 
 EcoBox – Sustainable Packaging Solutions est une page vitrine destinée aux petites et moyennes entreprises souhaitant adopter des emballages écoresponsables, 100 % biodégradables et personnalisables. Le projet met l’accent sur la valorisation d’une offre verte tout en appliquant les fondamentaux du développement front-end.
